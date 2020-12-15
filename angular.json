@@ -32,9 +32,14 @@
             ],
             "styles": [
               "src/styles.scss",
-              "src/styles/fontawesome/css/font-awesome.css"
+              "src/vendor/styles/fontawesome/css/font-awesome.css",
+              "src/vendor/styles/bootstrap/bootstrap.min.css",
+              "src/vendor/styles/quirk.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/vendor/scripts/bootstrap/bootstrap.min.js",
+              "src/vendor/scripts/quirk.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -96,9 +101,14 @@
             ],
             "styles": [
               "src/styles.scss",
-              "src/styles/fontawesome/css/font-awesome.css"
+              "src/vendor/styles/fontawesome/css/font-awesome.css",
+              "src/vendor/styles/bootstrap/bootstrap.min.css",
+              "src/vendor/styles/quirk.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/vendor/scripts/bootstrap/bootstrap.min.js",
+              "src/vendor/scripts/quirk.js"
+            ]
           }
         },
         "lint": {
