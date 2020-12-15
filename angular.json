@@ -32,13 +32,13 @@
             ],
             "styles": [
               "src/styles.scss",
-              "src/vendor/styles/fontawesome/css/font-awesome.css",
-              "src/vendor/styles/bootstrap/bootstrap.min.css",
-              "src/vendor/styles/quirk.css"
+              "src/vendor/fontawesome/css/font-awesome.css",
+              "src/vendor/bootstrap/css/bootstrap.min.css",
+              "src/vendor/quirk/quirk.css"
             ],
             "scripts": [
-              "src/vendor/scripts/bootstrap/bootstrap.min.js",
-              "src/vendor/scripts/quirk.js"
+              "src/vendor/bootstrap/js/bootstrap.min.js",
+              "src/vendor/quirk/quirk.js"
             ]
           },
           "configurations": {
@@ -101,13 +101,13 @@
             ],
             "styles": [
               "src/styles.scss",
-              "src/vendor/styles/fontawesome/css/font-awesome.css",
-              "src/vendor/styles/bootstrap/bootstrap.min.css",
-              "src/vendor/styles/quirk.css"
+              "src/vendor/fontawesome/css/font-awesome.css",
+              "src/vendor/bootstrap/css/bootstrap.min.css",
+              "src/vendor/quirk/quirk.css"
             ],
             "scripts": [
-              "src/vendor/scripts/bootstrap/bootstrap.min.js",
-              "src/vendor/scripts/quirk.js"
+              "src/vendor/bootstrap/js/bootstrap.min.js",
+              "src/vendor/quirk/quirk.js"
             ]
           }
         },
