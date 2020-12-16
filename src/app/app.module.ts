@@ -6,15 +6,9 @@ import { AppComponent } from './app.component';
 import { ContentLayoutComponent } from './layouts/content-layout/content-layout.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    ContentLayoutComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  declarations: [AppComponent, ContentLayoutComponent],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
