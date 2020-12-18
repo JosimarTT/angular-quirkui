@@ -1,9 +1,9 @@
-$(document).ready(function () {
+$(function () {
   "use strict";
 
   /***** SHOW / HIDE LEFT MENU *****/
 
-  $("#menuToggle").click(function () {
+  $("#menuToggle").on("click", function () {
     var collapsedMargin = $(".mainpanel").css("margin-left");
     var collapsedLeft = $(".mainpanel").css("left");
 
@@ -55,7 +55,7 @@ $(document).ready(function () {
   $("#todayDate").text(getDateToday());
 
   // Toggle Left Menu
-  $(".nav-parent > a").on("click", function () {
+  $("body").on("click", ".nav-parent > a", function () {
     var gran = $(this).closest(".nav");
     var parent = $(this).parent();
     var sub = parent.find("> ul");
@@ -82,7 +82,7 @@ $(document).ready(function () {
 
   // Josimar T.T.
   // Animation hide for vertical menu
-  $(".nav-single").on("click", function () {
+  $("body").on("click", ".nav-single", function () {
     var siblings = $(this).siblings();
     siblings.each(function () {
       var t = jQuery(this);

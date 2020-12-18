@@ -103,10 +103,12 @@
             "styles": [
               "src/styles.scss",
               "./node_modules/font-awesome/css/font-awesome.css",
+              "./node_modules/select2/dist/css/select2.min.css",
               "src/vendor/quirk/quirk.css"
             ],
             "scripts": [
               "./node_modules/bootstrap/dist/js/bootstrap.min.js",
+              "./node_modules/select2/dist/js/select2.min.js",
               "src/vendor/quirk/quirk.js"
             ]
           }
