@@ -63,27 +63,66 @@
         <div class="tab-pane active" id="mainmenu">
           <h5 class="sidebar-title">Navigation</h5>
           <ul class="nav nav-pills nav-stacked nav-quirk">
-            <li class="nav-single">
-              <a [routerLink]="['/clinic/list']"
+            <li class="nav-single" [class.active]="rlaDashboard.isActive">
+              <a
+                [routerLink]="['/dashboard/index']"
+                routerLinkActive="activeLink"
+                #rlaDashboard="routerLinkActive"
                 ><i class="fa fa-home"></i> <span>Dashboard</span></a
               >
             </li>
-            <li class="nav-parent active">
+            <li
+              class="nav-parent"
+              [class.active]="
+                rlaClinicSearch.isActive || rlaClinicImport.isActive
+              "
+            >
               <a href=""><i class="fa fa-building"></i> <span>Clinics</span></a>
               <ul class="children">
-                <li class="active">
-                  <a [routerLink]="['/clinic/list']">List</a>
+                <li [class.active]="rlaClinicSearch.isActive">
+                  <a
+                    [routerLink]="['/clinic/search']"
+                    routerLinkActive="activeLink"
+                    #rlaClinicSearch="routerLinkActive"
+                    >Search</a
+                  >
                 </li>
-                <li><a [routerLink]="['/clinic/import']">Import</a></li>
+                <li [class.active]="rlaClinicImport.isActive">
+                  <a
+                    [routerLink]="['/clinic/import']"
+                    routerLinkActive="activeLink"
+                    #rlaClinicImport="routerLinkActive"
+                    >Import</a
+                  >
+                </li>
               </ul>
             </li>
-            <li class="nav-parent">
+            <li
+              class="nav-parent"
+              [class.active]="
+                rlaDossierSearch.isActive || rlaDossierImport.isActive
+              "
+            >
               <a href=""
-                ><i class="fa fa-suitcase"></i> <span>Dossiers</span></a
+                ><i class="fa fa-file-text"></i> <span>Dossiers</span></a
               >
               <ul class="children">
-                <li><a [routerLink]="['/clinic/list']">List</a></li>
-                <li><a [routerLink]="['/clinic/import']">Import</a></li>
+                <li [class.active]="rlaDossierSearch.isActive">
+                  <a
+                    [routerLink]="['/dossier/search']"
+                    routerLinkActive="activeLink"
+                    #rlaDossierSearch="routerLinkActive"
+                    >Search</a
+                  >
+                </li>
+                <li [class.active]="rlaDossierImport.isActive">
+                  <a
+                    [routerLink]="['/dossier/import']"
+                    routerLinkActive="activeLink"
+                    #rlaDossierImport="routerLinkActive"
+                    >Import</a
+                  >
+                </li>
               </ul>
             </li>
           </ul>

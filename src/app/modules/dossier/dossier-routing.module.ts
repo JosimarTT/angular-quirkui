@@ -1,13 +1,12 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { DetailsComponent } from './pages/details/details.component';
 import { ImportComponent } from './pages/import/import.component';
 import { SearchComponent } from './pages/search/search.component';
 
 const routes: Routes = [
   {
     path: '',
-    redirectTo: '/clinic/search',
+    redirectTo: '/dossier/search',
     pathMatch: 'full',
   },
   {
@@ -21,15 +20,11 @@ const routes: Routes = [
         path: 'import',
         component: ImportComponent,
       },
-      {
-        path: 'details/:id',
-        component: DetailsComponent,
-      },
     ],
   },
   {
     path: '**',
-    redirectTo: '/clinic/search',
+    redirectTo: '/dossier/search',
     pathMatch: 'full',
   },
 ];
@@ -38,4 +33,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule],
 })
-export class ClinicRoutingModule {}
+export class DossierRoutingModule {}

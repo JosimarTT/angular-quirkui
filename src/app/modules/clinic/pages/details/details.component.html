@@ -1,0 +1,90 @@
+<ol class="breadcrumb breadcrumb-quirk">
+  <li>
+    <a [routerLink]="['/dashboard']"
+      ><i class="fa fa-home mr5"></i>&nbsp;Home</a
+    >
+  </li>
+  <li><a [routerLink]="['/clinic/search']">Clinics </a></li>
+  <li>
+    <a [routerLink]="['/clinic/search']">Search</a>
+  </li>
+  <li class="active">Clinic Details</li>
+</ol>
+
+<div class="panel">
+  <div class="panel-heading">
+    <h4 class="panel-title">CLINCIC DETAILS</h4>
+    <p>General details for the current clinic.</p>
+  </div>
+  <!-- panel-heading -->
+  <div class="panel-body">
+    <div class="row">
+      <div class="col-md-3">
+        <div class="well">
+          <div>
+            <h4 class="panel-title">Clinic</h4>
+          </div>
+          <div>Clinic Name</div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="well">
+          <div>
+            <h4 class="panel-title">Region</h4>
+          </div>
+          <div>Region Name</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- panel-body -->
+</div>
+<!-- panel -->
+
+<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 nopaddingleft">
+  <div class="nav-wrapper white">
+    <h5 class="sidebar-title">Navigation</h5>
+    <ul class="nav nav-pills nav-stacked nav-quirk">
+      <li class="nav-parent active">
+        <a href onclick="return false;"
+          ><i class="fa fa-building"></i> <span>Ingresos</span></a
+        >
+        <ul class="children">
+          <li>
+            <a>El Ingreso o Elegibilidad Adjunta está documentado</a>
+          </li>
+          <li>
+            <a>Sueldo</a>
+          </li>
+          <li>
+            <a>Otros</a>
+          </li>
+        </ul>
+      </li>
+      <li class="nav-parent">
+        <a href onclick="return false;"
+          ><i class="fa fa-file-text"></i> <span>Lactancia</span></a
+        >
+        <ul class="children">
+          <li>
+            <a>Comienzo (infantes y niños) está documentado</a>
+          </li>
+          <li>
+            <a>Duración en semanas (infantes y niños) está documentada</a>
+          </li>
+          <li>
+            <a>Apoyo y datos de Lactancia actualizados</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<div
+  id="case_sections"
+  class="col-xs-6 col-sm-8 col-md-9 col-lg-10 pl-0 nopaddingright"
+>
+  <div class="panel" style="height: 500px">TODO</div>
+  <!-- panel -->
+</div>

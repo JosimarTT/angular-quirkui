@@ -81,42 +81,16 @@ $(document).ready(function () {
   });
 
   // Josimar T.T.
-  // Change active class on subelements nav list
-  $(".nav-parent > .children > li").on("click", function () {
-    var gran = $(this).closest(".nav-parent");
-    var parent = $(this).parent();
-    var siblings = $(this).siblings();
-
-    if (!gran.hasClass("active")) {
-      gran.siblings().removeClass("active");
-      gran.siblings().find("> ul > li").removeClass("active");
-      gran.addClass("active");
-      $(this).addClass("active");
-    } else {
-      siblings.each(function () {
-        var t = jQuery(this);
-        t.removeClass("active");
-      });
-      $(this).addClass("active");
-    }
-  });
-
-  // Josimar T.T.
-  // Change active class on subelements nav buttons
+  // Animation hide for vertical menu
   $(".nav-single").on("click", function () {
-    var parent = $(this).parent();
     var siblings = $(this).siblings();
-
     siblings.each(function () {
       var t = jQuery(this);
       var sub = t.find("> ul");
-      t.removeClass("active");
       if (sub.is(":visible")) {
         sub.slideUp(200);
       }
-      t.find("> ul > li").removeClass("active");
     });
-    $(this).addClass("active");
   });
 
   function closeVisibleSubMenu() {

@@ -1,0 +1,176 @@
+<ol class="breadcrumb breadcrumb-quirk">
+  <li>
+    <a [routerLink]="['/dashboard']"
+      ><i class="fa fa-home mr5"></i>&nbsp;Home</a
+    >
+  </li>
+  <li><a [routerLink]="['/clinic/search']">Clinics</a></li>
+  <li class="active">Search</li>
+</ol>
+
+<div class="panel">
+  <div class="panel-heading nopaddingbottom">
+    <h4 class="panel-title">Clinic Search</h4>
+    <p>Please provide filters to search a clinic.</p>
+  </div>
+  <div class="panel-body">
+    <hr />
+    <form id="basicForm" action="form-validation.html" class="form-horizontal">
+      <div class="form-group">
+        <label class="col-sm-2 control-label"
+          >Clinic <span class="text-danger">*</span></label
+        >
+        <div class="col-sm-4">
+          <input
+            type="text"
+            name="clinic"
+            class="form-control"
+            placeholder="Clinic"
+            required
+          />
+        </div>
+        <label class="col-sm-2 control-label"
+          >Region <span class="text-danger">*</span></label
+        >
+        <div class="col-sm-4">
+          <input
+            type="text"
+            name="region"
+            class="form-control"
+            placeholder="Region"
+            required
+          />
+        </div>
+      </div>
+
+      <hr />
+
+      <div class="row">
+        <div class="col-sm-12 text-center">
+          <button class="btn btn-success btn-quirk btn-wide mr5">SEARCH</button>
+          <button type="reset" class="btn btn-quirk btn-wide btn-default">
+            RESET
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+  <!-- panel-body -->
+</div>
+<!-- panel -->
+
+<div class="panel">
+  <div class="panel-heading nopaddingbottom">
+    <h4 class="panel-title">Clinic Search Result</h4>
+    <p>Result based on your filters.</p>
+  </div>
+  <div class="panel-body">
+    <hr />
+    <div class="table-responsive">
+      <table class="table table-bordered nomargin">
+        <thead>
+          <tr>
+            <th class="text-center"></th>
+            <th>Clinic</th>
+            <th>Region</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="text-center">
+              <label class="ckbox ckbox-primary">
+                <input type="checkbox" /><span></span>
+              </label>
+            </td>
+            <td>Clínica WIC Ponce</td>
+            <td>Ponce</td>
+            <td>
+              <ul class="table-options">
+                <li>
+                  <a [routerLink]="['/clinic/details/1']"
+                    ><i class="fa fa-eye"></i
+                  ></a>
+                </li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td class="text-center">
+              <label class="ckbox ckbox-primary">
+                <input type="checkbox" /><span></span>
+              </label>
+            </td>
+            <td>Clínica WIC Las Marías</td>
+            <td>Mayagüez</td>
+            <td>
+              <ul class="table-options">
+                <li>
+                  <a [routerLink]="['/clinic/details/1']"
+                    ><i class="fa fa-eye"></i
+                  ></a>
+                </li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td class="text-center">
+              <label class="ckbox ckbox-primary">
+                <input type="checkbox" /><span></span>
+              </label>
+            </td>
+            <td>Clínica WIC Sabana Grande</td>
+            <td>Mayagüez</td>
+            <td>
+              <ul class="table-options">
+                <li>
+                  <a [routerLink]="['/clinic/details/1']"
+                    ><i class="fa fa-eye"></i
+                  ></a>
+                </li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td class="text-center">
+              <label class="ckbox ckbox-primary">
+                <input type="checkbox" /><span></span>
+              </label>
+            </td>
+            <td>Clínica WIC Camuy</td>
+            <td>Arecibo</td>
+            <td>
+              <ul class="table-options">
+                <li>
+                  <a [routerLink]="['/clinic/details/1']"
+                    ><i class="fa fa-eye"></i
+                  ></a>
+                </li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td class="text-center">
+              <label class="ckbox ckbox-primary">
+                <input type="checkbox" /><span></span>
+              </label>
+            </td>
+            <td>Clinica COVID-19</td>
+            <td>Satélite</td>
+            <td>
+              <ul class="table-options">
+                <li>
+                  <a [routerLink]="['/clinic/details/1']"
+                    ><i class="fa fa-eye"></i
+                  ></a>
+                </li>
+              </ul>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <!-- table-responsive -->
+  </div>
+</div>
+<!-- panel -->
